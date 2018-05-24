@@ -7,6 +7,10 @@
   .navbar > ul > li {
     margin-bottom: 15px;
   }
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 * {
@@ -31,7 +35,7 @@ a:hover {
 .container {
   display: grid;
   grid-auto-rows: minmax(50px, auto);
-  grid-gap: 2px;
+  /* grid-gap: 2px; */
 }
 
 .navbar > ul {
@@ -80,6 +84,12 @@ li:hover {
 #footer > ul > li.bolder {
   font-size: 11pt;
   font-weight: bold;
+  color: #666666;
+}
+
+#footer > ul {
+  margin-top: 40px;
+  list-style: none;
 }
 
 #featured-product {
@@ -138,12 +148,37 @@ li > input {
 }
 
 #footer > ul > li {
-  font-size: 10pt;
+  font-size: 9pt;
   margin-bottom: 15px;
+  color: #8c8c8c;
+}
+
+#footer > ul > li:hover {
+  cursor: pointer;
 }
 
 #footer {
   display: flex;
   justify-content: space-around;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
+}
+
+#bottom {
+  display: flex;
+  font-size: 9pt;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+#bottom > ul {
+  display: flex;
+}
+
+#bottom > ul > li {
+  list-style: none;
+  margin-left: 25px;
+}
+
+#bottom > ul > li > img {
+  height: 20px;
 }
